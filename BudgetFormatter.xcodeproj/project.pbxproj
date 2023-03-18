@@ -17,6 +17,8 @@
 		06961EDF29C64C86007F32CF /* BudgetFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06961EDE29C64C86007F32CF /* BudgetFormatterTests.swift */; };
 		06961EE929C64C86007F32CF /* BudgetFormatterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06961EE829C64C86007F32CF /* BudgetFormatterUITests.swift */; };
 		06961EEB29C64C86007F32CF /* BudgetFormatterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06961EEA29C64C86007F32CF /* BudgetFormatterUITestsLaunchTests.swift */; };
+		06961EF829C65826007F32CF /* MoneyFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06961EF729C65826007F32CF /* MoneyFormatterTests.swift */; };
+		06961EFA29C65B60007F32CF /* MoneyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06961EF929C65B60007F32CF /* MoneyFormatter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		06961EE429C64C86007F32CF /* BudgetFormatterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BudgetFormatterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		06961EE829C64C86007F32CF /* BudgetFormatterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetFormatterUITests.swift; sourceTree = "<group>"; };
 		06961EEA29C64C86007F32CF /* BudgetFormatterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetFormatterUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		06961EF729C65826007F32CF /* MoneyFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyFormatterTests.swift; sourceTree = "<group>"; };
+		06961EF929C65B60007F32CF /* MoneyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyFormatter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,7 @@
 				06961ED229C64C85007F32CF /* LaunchScreen.storyboard */,
 				06961ED529C64C85007F32CF /* Info.plist */,
 				06961ECD29C64C7B007F32CF /* BudgetFormatter.xcdatamodeld */,
+				06961EF929C65B60007F32CF /* MoneyFormatter.swift */,
 			);
 			path = BudgetFormatter;
 			sourceTree = "<group>";
@@ -117,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				06961EDE29C64C86007F32CF /* BudgetFormatterTests.swift */,
+				06961EF729C65826007F32CF /* MoneyFormatterTests.swift */,
 			);
 			path = BudgetFormatterTests;
 			sourceTree = "<group>";
@@ -263,6 +269,7 @@
 			files = (
 				06961EC929C64C7B007F32CF /* ViewController.swift in Sources */,
 				06961EC529C64C7B007F32CF /* AppDelegate.swift in Sources */,
+				06961EFA29C65B60007F32CF /* MoneyFormatter.swift in Sources */,
 				06961EC729C64C7B007F32CF /* SceneDelegate.swift in Sources */,
 				06961ECF29C64C7B007F32CF /* BudgetFormatter.xcdatamodeld in Sources */,
 			);
@@ -273,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				06961EDF29C64C86007F32CF /* BudgetFormatterTests.swift in Sources */,
+				06961EF829C65826007F32CF /* MoneyFormatterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
