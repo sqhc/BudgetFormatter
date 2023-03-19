@@ -9,6 +9,7 @@ import Foundation
 
 class Budget{
     var weekyRemaining: Decimal = 0
+    var dailyRemaining: Decimal = 0
     init(total: Decimal){
         weekyRemaining = total
     }
