@@ -9,6 +9,7 @@ import Foundation
 
 struct MoneyFormatter{
     func string(decimal: Decimal)-> String{
-        return ""
+        let numberFormatter = NumberFormatter()
+        return "\(numberFormatter.string(from: decimal as NSDecimalNumber) ?? "").00"
     }
 }
