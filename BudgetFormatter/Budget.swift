@@ -16,6 +16,6 @@ class Budget{
     }
     
     func addTransaction(amount: Decimal, timestamp: Date){
-        
+        weekyRemaining -= amount
     }
 }
