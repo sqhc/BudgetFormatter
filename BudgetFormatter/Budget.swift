@@ -12,5 +12,6 @@ class Budget{
     var dailyRemaining: Decimal = 0
     init(total: Decimal){
         weekyRemaining = total
+        dailyRemaining = total/7
     }
 }

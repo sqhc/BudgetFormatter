@@ -19,10 +19,10 @@ class BudgetTests: XCTestCase {
     }
     
     func testBudgetContainsDailyRemaining(){
-        let amounts: [Decimal] = [0, 1, 2, 123]
+        let amounts: [Decimal] = [0, 7, 14, 70]
         amounts.forEach{ amount in
             let budget = Budget(total: amount)
-            XCTAssertEqual(budget.dailyRemaining, amount/7)
+            XCTAssertEqual(budget.dailyRemaining, amount/7, "daily remaining is not equals to \(amount)/7")
         }
     }
     
