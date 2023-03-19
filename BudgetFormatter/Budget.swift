@@ -8,14 +8,22 @@
 import Foundation
 
 class Budget{
-    var weekyRemaining: Decimal = 0
-    var dailyRemaining: Decimal = 0
+    var weekyRemaining: Decimal {
+        return _weekyRemaining
+    }
+    var dailyRemaining: Decimal {
+        return _dailyRemaining
+    }
+    
+    private var _weekyRemaining: Decimal
+    private var _dailyRemaining: Decimal
     init(total: Decimal){
-        weekyRemaining = total
-        dailyRemaining = total/7
+        _weekyRemaining = total
+        _dailyRemaining = total/7
     }
     
     func addTransaction(amount: Decimal, timestamp: Date){
-        weekyRemaining -= amount
+        _weekyRemaining -= amount
+        _dailyRemaining -= amount
     }
 }

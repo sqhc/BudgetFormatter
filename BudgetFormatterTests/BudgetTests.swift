@@ -45,5 +45,8 @@ class BudgetTests: XCTestCase {
         
         budget.addTransaction(amount: 1, timestamp: Date())
         XCTAssertEqual(budget.dailyRemaining, 9)
+        
+        budget.addTransaction(amount: 2, timestamp: Date())
+        XCTAssertEqual(budget.dailyRemaining, 7)
     }
 }
