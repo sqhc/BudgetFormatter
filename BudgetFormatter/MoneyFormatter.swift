@@ -10,6 +10,7 @@ import Foundation
 struct MoneyFormatter{
     func string(decimal: Decimal)-> String{
         let numberFormatter = NumberFormatter()
-        return "\(numberFormatter.string(from: decimal as NSDecimalNumber) ?? "").00"
+        numberFormatter.minimumFractionDigits = 2
+        return "\(numberFormatter.string(from: decimal as NSDecimalNumber) ?? "")"
     }
 }

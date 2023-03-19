@@ -22,5 +22,14 @@ class MoneyFormatterTests: XCTestCase {
     func testMoneyFormatterOneDecimalNumber(){
         let formatter = MoneyFormatter()
         XCTAssertEqual(formatter.string(decimal: 1.1), "1.10")
+        XCTAssertEqual(formatter.string(decimal: 1.2), "1.20")
+        XCTAssertEqual(formatter.string(decimal: -1.1), "-1.10")
+    }
+    
+    func testMoneyFormatterTwoDecimalNumbers(){
+        let formatter = MoneyFormatter()
+        XCTAssertEqual(formatter.string(decimal: 1.11), "1.11")
+        XCTAssertEqual(formatter.string(decimal: 1.12), "1.12")
+        XCTAssertEqual(formatter.string(decimal: -1.11), "-1.11")
     }
 }
