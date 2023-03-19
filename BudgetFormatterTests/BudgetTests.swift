@@ -11,7 +11,14 @@ import XCTest
 class BudgetTests: XCTestCase {
 
     func testBudgetContainsWeeklyRemaining(){
+        var budget = Budget(total: 0)
+        XCTAssertEqual(budget.weekyRemaining, 0)
         
+        budget = Budget(total: 1)
+        XCTAssertEqual(budget.weekyRemaining, 1)
+        
+        budget = Budget(total: 123)
+        XCTAssertEqual(budget.weekyRemaining, 123)
     }
     
     func testBudgetContainsDailyRemaining(){

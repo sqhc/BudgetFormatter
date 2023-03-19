@@ -20,6 +20,7 @@
 		06961EF829C65826007F32CF /* MoneyFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06961EF729C65826007F32CF /* MoneyFormatterTests.swift */; };
 		06961EFA29C65B60007F32CF /* MoneyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06961EF929C65B60007F32CF /* MoneyFormatter.swift */; };
 		06961EFC29C74331007F32CF /* BudgetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06961EFB29C74331007F32CF /* BudgetTests.swift */; };
+		06961EFE29C74EE1007F32CF /* Budget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06961EFD29C74EE0007F32CF /* Budget.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		06961EF729C65826007F32CF /* MoneyFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyFormatterTests.swift; sourceTree = "<group>"; };
 		06961EF929C65B60007F32CF /* MoneyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyFormatter.swift; sourceTree = "<group>"; };
 		06961EFB29C74331007F32CF /* BudgetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetTests.swift; sourceTree = "<group>"; };
+		06961EFD29C74EE0007F32CF /* Budget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Budget.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 				06961ED529C64C85007F32CF /* Info.plist */,
 				06961ECD29C64C7B007F32CF /* BudgetFormatter.xcdatamodeld */,
 				06961EF929C65B60007F32CF /* MoneyFormatter.swift */,
+				06961EFD29C74EE0007F32CF /* Budget.swift */,
 			);
 			path = BudgetFormatter;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 			files = (
 				06961EC929C64C7B007F32CF /* ViewController.swift in Sources */,
 				06961EC529C64C7B007F32CF /* AppDelegate.swift in Sources */,
+				06961EFE29C74EE1007F32CF /* Budget.swift in Sources */,
 				06961EFA29C65B60007F32CF /* MoneyFormatter.swift in Sources */,
 				06961EC729C64C7B007F32CF /* SceneDelegate.swift in Sources */,
 				06961ECF29C64C7B007F32CF /* BudgetFormatter.xcdatamodeld in Sources */,
