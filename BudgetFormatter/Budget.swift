@@ -14,4 +14,8 @@ class Budget{
         weekyRemaining = total
         dailyRemaining = total/7
     }
+    
+    func addTransaction(amount: Decimal, timestamp: Date){
+        
+    }
 }
