@@ -39,6 +39,11 @@ class BudgetTests: XCTestCase {
     }
     
     func testTransactionDeductsFromDailyRemaining(){
+        let budget = Budget(total: 70)
+        budget.addTransaction(amount: 0, timestamp: Date())
+        XCTAssertEqual(budget.dailyRemaining, 10)
         
+        budget.addTransaction(amount: 1, timestamp: Date())
+        XCTAssertEqual(budget.dailyRemaining, 9)
     }
 }
