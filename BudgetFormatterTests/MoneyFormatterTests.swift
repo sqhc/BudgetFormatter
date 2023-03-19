@@ -12,5 +12,6 @@ class MoneyFormatterTests: XCTestCase {
 
     func testMoneyFormatterWholeNumber(){
         let formatter = MoneyFormatter()
+        XCTAssertEqual(formatter.string(decimal: 0), "0.00")
     }
 }

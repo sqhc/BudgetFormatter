@@ -8,5 +8,7 @@
 import Foundation
 
 struct MoneyFormatter{
-    
+    func string(decimal: Decimal)-> String{
+        return ""
+    }
 }
