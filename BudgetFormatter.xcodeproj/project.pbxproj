@@ -19,6 +19,7 @@
 		06961EEB29C64C86007F32CF /* BudgetFormatterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06961EEA29C64C86007F32CF /* BudgetFormatterUITestsLaunchTests.swift */; };
 		06961EF829C65826007F32CF /* MoneyFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06961EF729C65826007F32CF /* MoneyFormatterTests.swift */; };
 		06961EFA29C65B60007F32CF /* MoneyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06961EF929C65B60007F32CF /* MoneyFormatter.swift */; };
+		06961EFC29C74331007F32CF /* BudgetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06961EFB29C74331007F32CF /* BudgetTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		06961EEA29C64C86007F32CF /* BudgetFormatterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetFormatterUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		06961EF729C65826007F32CF /* MoneyFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyFormatterTests.swift; sourceTree = "<group>"; };
 		06961EF929C65B60007F32CF /* MoneyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyFormatter.swift; sourceTree = "<group>"; };
+		06961EFB29C74331007F32CF /* BudgetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 			children = (
 				06961EDE29C64C86007F32CF /* BudgetFormatterTests.swift */,
 				06961EF729C65826007F32CF /* MoneyFormatterTests.swift */,
+				06961EFB29C74331007F32CF /* BudgetTests.swift */,
 			);
 			path = BudgetFormatterTests;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06961EFC29C74331007F32CF /* BudgetTests.swift in Sources */,
 				06961EDF29C64C86007F32CF /* BudgetFormatterTests.swift in Sources */,
 				06961EF829C65826007F32CF /* MoneyFormatterTests.swift in Sources */,
 			);
