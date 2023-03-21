@@ -8,7 +8,11 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var weeklyRemainingLabel: UILabel!
+    @IBOutlet weak var dailyRemainingLabel: UILabel!
+    @IBOutlet weak var totalBudgetTextField: UITextField!
+    @IBOutlet weak var transactionBudgetTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
