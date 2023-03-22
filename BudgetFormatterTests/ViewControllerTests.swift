@@ -28,6 +28,18 @@ class ViewControllerTests: XCTestCase {
     }
     
     func testCreateATransactionUpatesRemainingLabels(){
+        let budget = Budget(total: 70)
+        budget.addTransaction(amount: 5, timestamp: Date())
         
+        let textField = viewController.totalBudgetTextField!
+        textField.text = "70"
+        _ = textField.delegate?.textFieldShouldReturn?(textField)
+        
+        let textField2 = viewController.transactionBudgetTextField!
+        textField2.text = "5"
+        _ = textField2.delegate?.textFieldShouldReturn?(textField2)
+        
+        XCTAssertEqual(viewController.weeklyRemainingLabel.text, budget.weekyRemaining.Moneystring)
+        XCTAssertEqual(viewController.dailyRemainingLabel.text, budget.dailyRemaining.Moneystring)
     }
 }
