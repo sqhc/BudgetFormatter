@@ -18,8 +18,19 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        totalBudgetTextField.delegate = self
     }
 
     //
 }
 
+extension ViewController: UITextFieldDelegate{
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        guard let total = Decimal(string: textField.text!) else{
+            return true
+        }
+        budget = Budget(total: total)
+        weeklyRemainingLabel.text = budget?.weekyRemaining.Moneystring
+        return true
+    }
+}

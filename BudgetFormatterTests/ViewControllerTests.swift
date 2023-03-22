@@ -13,7 +13,7 @@ class ViewControllerTests: XCTestCase {
     var viewController: ViewController!
     
     override func setUp() {
-        viewController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController() as! ViewController
+        viewController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController() as? ViewController
         _ = viewController.view
     }
     
