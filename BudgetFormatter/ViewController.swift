@@ -13,6 +13,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var totalBudgetTextField: UITextField!
     @IBOutlet weak var transactionBudgetTextField: UITextField!
     
+    var budget: Budget?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

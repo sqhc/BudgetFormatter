@@ -18,7 +18,13 @@ class ViewControllerTests: XCTestCase {
     }
     
     func testCreateANewBudgetUpdateRemainingLabels(){
+        let textField = viewController.totalBudgetTextField!
+        textField.text = "100"
+        _ = textField.delegate?.textFieldShouldReturn?(textField)
         
+        let budget = viewController.budget
+        XCTAssertEqual(viewController.weeklyRemainingLabel.text, budget?.weekyRemaining.Moneystring)
+        //viewController.dailyRemainingLabel.text = budget?.dailyRemaining.Moneystring
     }
     
     func testCreateATransactionUpatesRemainingLabels(){
