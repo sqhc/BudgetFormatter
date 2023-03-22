@@ -31,6 +31,7 @@ extension ViewController: UITextFieldDelegate{
         }
         budget = Budget(total: total)
         weeklyRemainingLabel.text = budget?.weekyRemaining.Moneystring
+        dailyRemainingLabel.text = budget?.dailyRemaining.Moneystring
         return true
     }
 }

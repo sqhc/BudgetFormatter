@@ -24,7 +24,7 @@ class ViewControllerTests: XCTestCase {
         
         let budget = viewController.budget
         XCTAssertEqual(viewController.weeklyRemainingLabel.text, budget?.weekyRemaining.Moneystring)
-        //viewController.dailyRemainingLabel.text = budget?.dailyRemaining.Moneystring
+        XCTAssertEqual(viewController.dailyRemainingLabel.text, budget?.dailyRemaining.Moneystring)
     }
     
     func testCreateATransactionUpatesRemainingLabels(){
