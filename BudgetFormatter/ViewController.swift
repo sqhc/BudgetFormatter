@@ -22,7 +22,10 @@ class ViewController: UIViewController {
         transactionBudgetTextField.delegate = self
     }
 
-    //
+    private func updateBudgetLabels(){
+        weeklyRemainingLabel.text = budget?.weekyRemaining.Moneystring
+        dailyRemainingLabel.text = budget?.dailyRemaining.Moneystring
+    }
 }
 
 extension ViewController: UITextFieldDelegate{
@@ -30,9 +33,16 @@ extension ViewController: UITextFieldDelegate{
         guard let total = Decimal(string: textField.text!) else{
             return true
         }
-        budget = Budget(total: total)
-        weeklyRemainingLabel.text = budget?.weekyRemaining.Moneystring
-        dailyRemainingLabel.text = budget?.dailyRemaining.Moneystring
+        switch textField{
+        case totalBudgetTextField:
+            budget = Budget(total: total)
+        case transactionBudgetTextField:
+            budget?.addTransaction(amount: total, timestamp: Date())
+        default:
+            return true
+        }
+        
+        updateBudgetLabels()
         return true
     }
 }
